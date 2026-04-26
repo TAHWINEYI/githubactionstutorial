@@ -1,0 +1,12 @@
+name: "001helloword"
+
+on:
+   workflow_dispatch:  #//this event triggers the workflow manully
+
+jobs:
+  say-hello_job:
+    runs-on:windows-latest
+
+    steps:
+      - name: Echo Hello World
+        run: Echo "Hello World"
